@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="ID_DI">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+        <link rel="stylesheet" href="./main.css">
+        <title>Brainster Trivia Quiz</title>
+    </head>
+
+    <body>
+    
+        <main class="container">
+            <div id="loadingScreen" class="vh-100 d-flex justify-content-center align-items-center">
+                <h1 class="animeBoucing">Loading...</h1>
+            </div>
+
+            <div id="welcomeScreen" class="col-10 offset-1 flex-column text-center d-none animate__animated animate__backInDown">
+                <div id="startTxt" class="col-12 d-flex flex-column rounded py-4 bg-grey">
+                    <h1 id="wentWrong" class="my-2">Welcome to Brainster's Trivia!</h1>
+                    <p class="h5 font-italic my-2">Click on the start button to begin.</p>
+                    <hr class="w-75 my-2">
+                    <button id="startBtn" class="btn btn-success w-25 mx-auto my-2">Start</button>
+                </div>
+
+                <div id="gameTxt" class="d-none col-12 flex-column py-2 bg-grey border rounded">
+                    <h2 class="">Good Luck!</h2>
+                    <p class="lead">Click on the button to start over</p>
+                    <hr class="w-75 my-2">
+                    <button id='startOverBtn' class='btn btn-warning w-25 mx-auto'>Start Over</button>
+                </div>
+
+                <div id="questionSection" class="d-none flex-column col-10 offset-1 my-5">
+                    <div id="questionPart" class='bg-grey p-3 border mb-0'></div>
+                    <div id="answerPart" class='p-3 border d-flex justify-content-around'></div>
+                    <p id="categoryPart" class='bg-grey text-left p-3 border'></p>
+                </div>
+
+                <div id="counterSection" class="d-none justify-content-center align-content-center col-12 rounded py-4 bg-grey mb-0"></div>
+
+                <div id="scoreSe" class="d-none col-12 flex-column py-2 bg-grey border rounded">
+                    <h2 class="">Good Luck!</h2>
+                    <p class="">Click on the button to start over</p>
+                    <hr class="w-75 my-2">
+                    <button id='startOverBtn' class='btn btn-warning w-25 mx-auto'>Start Over</button>
+                </div>
+ 
+                <div id="resultSection" class="d-none flex-column justify-content-center align-content-center col-12 mt-0">
+                    <div class="bg-grey mt-0 py-4 col-12 justify-content-center align-content-center">
+                        <h2 class="">Let's see your score!</h2>
+                        <p class="">Click on the button to start again</p>
+                        <hr class="w-75 my-2">
+                        <button id='tryAgainBtn' class='btn btn-danger w-25 mx-auto'>Try Again</button>
+                    </div>
+              
+                    <div id="scorePart" class="justify-content-center align-content-center col-12 py-4 bg-grey mt-5"></div>
+                </div>
+            </div>
+        </main>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
+
